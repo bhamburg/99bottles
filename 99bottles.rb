@@ -15,6 +15,6 @@ while n > 0
     puts "#{n} bottle#{s} of #{beer}."
     puts "Take one down, pass it around."
     n -= 1
-    s = "" if n == 1
+    if n == 1 then s = "" else s = "s" end
     puts "#{n} bottle#{s} of #{beer} on the wall.\n\n"
 end
